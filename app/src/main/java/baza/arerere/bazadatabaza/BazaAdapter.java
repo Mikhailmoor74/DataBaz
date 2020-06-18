@@ -13,11 +13,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -25,7 +20,7 @@ public class BazaAdapter extends RecyclerView.Adapter<BazaAdapter.BazaViewHolder
 
     ArrayList<BazaItem> bazaItems;
     Context context;
-    private DatabaseReference mDatabase;
+
 
     public BazaAdapter(ArrayList<BazaItem> bazaItems, Context context) {
         this.bazaItems = bazaItems;
@@ -48,39 +43,12 @@ public class BazaAdapter extends RecyclerView.Adapter<BazaAdapter.BazaViewHolder
     public void onBindViewHolder(@NonNull final BazaAdapter.BazaViewHolder holder, int position) {
         BazaItem bazaItem = bazaItems.get(position);
         holder.bazaImageView.setImageResource(bazaItem.getImageResource());
-        /*holder.title.setText(bazaItem.getTitle());*/
+        holder.title.setText(bazaItem.getTitle());
         holder.price.setText(bazaItem.getPrice());
         holder.distance.setText(bazaItem.getDistance());
         holder.lake.setText(bazaItem.getLake());
 
 
-
-        mDatabase = FirebaseDatabase.getInstance().getReference();
-
-        // Read from the database
-        mDatabase.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-
-                BazaItem bazaItem = dataSnapshot.getValue(BazaItem.class);
-                /*((TextView)findViewById(R.id.title)).setText(bazaItem.getTitle());*/
-
-                holder.title.setText(bazaItem.getTitle());
-                holder.lake.setText(bazaItem.getLake());
-                holder.distance.setText(bazaItem.getDistance());
-                holder.price.setText(bazaItem.getDescription());
-
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w("failed update", "Failed to read value.", error.toException());
-            }
-        });
 
     }
 
