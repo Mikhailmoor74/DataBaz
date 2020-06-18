@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BazaDatabaza</string>
+    <string name="baza_databaza">Baza Databaza</string>
+    <string name="criteri">Критерий выбора</string>
+    <string name="enter_nazvanie">Введите название</string>
+    <string name="day_price">Цена за сутки</string>
+    <string name="price_ot">От:</string>
+    <string name="price_do">До:</string>
+    <string name="search">Поиск</string>
+    <string name="baza_name">baza_name</string>
+    <string name="description">Description</string>
+    <string name="price">price</string>
+    <string name="lake">lake</string>
+
+
+</resources>

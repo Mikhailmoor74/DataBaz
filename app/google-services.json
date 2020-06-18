@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "969827578548",
+    "firebase_url": "https://databaz-90dbd.firebaseio.com",
+    "project_id": "databaz-90dbd",
+    "storage_bucket": "databaz-90dbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969827578548:android:4ab8f9521d081fcd50dde1",
+        "android_client_info": {
+          "package_name": "baza.arerere.bazadatabaza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969827578548-2ij29outtifjtmt53heq3nkok0bv8eoj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6lDvo7T6i-e4pL99XtKlcy7Na8QuWuDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969827578548-2ij29outtifjtmt53heq3nkok0bv8eoj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
