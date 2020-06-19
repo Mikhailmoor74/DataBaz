@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BazaDatabaza</string>
-    <string name="baza_databaza">Baza Databaza</string>
+    <string name="baza_databaza">DATA BAZ</string>
     <string name="criteri">Критерий выбора</string>
     <string name="enter_nazvanie">Введите название</string>
     <string name="day_price">Цена за сутки</string>
