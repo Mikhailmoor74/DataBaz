@@ -5,17 +5,19 @@ public class Utils {
     public static final String BAZA_1_DESCRIPTION = "Первая база";
     public static final String BAZA_1_PRICE = "3000";
     public static final String BAZA_1_DISTANCE = "30 км";
-    public static final String BAZA_1_LAKE = "Argazi";
+    public static final String BAZA_1_LAKE = "Аргази";
 
     public static final String BAZA_2_TTILE = "Хуево-Кукуево";
     public static final String BAZA_2_DESCRIPTION = "Вторая база";
     public static final String BAZA_2_PRICE = "5000";
     public static final String BAZA_2_DISTANCE = "10 км";
+    public static final String BAZA_2_LAKE = "Смолино";
 
     public static final String BAZA_3_TTILE = "Крендельки";
     public static final String BAZA_3_DESCRIPTION = "Третья база";
     public static final String BAZA_3_PRICE = "1000";
     public static final String BAZA_3_DISTANCE = "15 км";
+    public static final String BAZA_3_LAKE = "Смолино";
 
     public static final String BAZA_4_TTILE = "Коржики";
     public static final String BAZA_4_DESCRIPTION = "Четвёртая база";

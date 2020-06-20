@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/back_2">
+    android:background="@drawable/back_2"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/baza_databaza"
+            style="@style/GreenText"
              />
 
     </LinearLayout>
@@ -37,7 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/criteri" />
+            android:text="@string/criteri"
+            style="@style/GreenText"/>
 
         <Spinner
             android:id="@+id/spinner"
@@ -60,7 +63,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/enter_nazvanie" />
+            android:text="@string/enter_nazvanie"
+            style="@style/GreenText"/>
 
         <EditText
             android:layout_margin="10dp"
@@ -83,7 +87,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/day_price" />
+            android:text="@string/day_price"
+            style="@style/GreenText"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -97,7 +102,8 @@
                 android:id="@+id/priceOt"
                 android:layout_margin="5dp"
                 android:text="@string/price_ot"
-                android:layout_marginTop="17dp"/>
+                android:layout_marginTop="17dp"
+                style="@style/GreenText"/>
 
             <EditText
                 android:layout_margin="10dp"
@@ -119,7 +125,8 @@
                 android:id="@+id/priceDo"
                 android:text="@string/price_do"
                 android:layout_margin="5dp"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="15dp"
+                style="@style/GreenText"/>
 
             <EditText
                 android:layout_margin="10dp"
@@ -132,14 +139,26 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/searchButton"
-        android:layout_below="@id/fourthLine"
-        android:layout_marginStart="160dp"
-        android:text="@string/search"
-        android:onClick="Search">
-    </androidx.appcompat.widget.AppCompatButton>
+        android:id="@+id/fifthLine"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/fourthLine">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Search"
+
+            android:text="@string/search">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
