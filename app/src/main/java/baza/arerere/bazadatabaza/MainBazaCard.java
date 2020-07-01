@@ -24,7 +24,6 @@ public class MainBazaCard extends AppCompatActivity {
         TextView distance = findViewById(R.id.distanceTextView);
         TextView price = findViewById(R.id.priceTextView);
         TextView lake = findViewById(R.id.lakeTextView);
-        ImageView imageView = findViewById(R.id.imageView);
 
 
         Intent intent = getIntent();

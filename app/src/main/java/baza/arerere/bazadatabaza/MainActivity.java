@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         LinearLayout linearThird = findViewById(R.id.thirdLine);
 
         if (position == 0) {
-            linearFourth.setVisibility(View.INVISIBLE);
+            linearFourth.setVisibility(View.GONE);
             linearThird.setVisibility(View.VISIBLE);
         } else if (position == 1) {
-            linearFourth.setVisibility(View.INVISIBLE);
+            linearFourth.setVisibility(View.GONE);
             linearThird.setVisibility(View.VISIBLE);
         } else {
             linearFourth.setVisibility(View.VISIBLE);
